@@ -21,6 +21,8 @@
     console.log(totalList);
   });
 
+  //this is a new comment
+
   document.querySelector('select').addEventListener('onchange',)
     
     
