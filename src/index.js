@@ -2,7 +2,7 @@
   const form2 = document.querySelector('form');
   const textField = document.getElementById('new-task-description');
   const taskList2 = document.getElementById('tasks');
-  const selector = document.querySelector('select').value;
+  const selector = document.querySelector('select');
   const totalList = [];
   form2.addEventListener('submit', (e) =>
   {
@@ -21,53 +21,19 @@
     console.log(totalList);
   });
 
-  //this is a new comment
-
-  document.querySelector('select').addEventListener('onchange',)
-    
-    
+  selector.addEventListener('change',(e) => {
+    taskList2.style.color = selector.value;
+  })
+  //e.
   
-
-    /*btn.addEventListener('click', (e) =>{
-    e.preventDefault();
-    e.target.parentNode.remove();
-    totalList.pop(); //this removes the last item in the array, which doesn't work properly if you X out anything but the last item.
-    console.log(btn);   
-
-  if(document.getElementById('select').value == 'red')
-  {
-    taskList2.children.getAttribute('color').value = 'red';
-  }
- // selector.style
-  // selector.addEventListener(selector.value.exists(), (e) => {
-  //   allTasks.style.color == selector.value.innerText;
-  // });
-  // if (selector.value=="Blue") {
-  //   allTasks.style.color = "blue";
-  // };
-  */
+  
+    
   document.body.addEventListener('click', (e)=> {
-  // if (e.target.innerText === "X") 
-  //    {
-  //     e.target.parentNode.remove();
-  //     console.log("we worked");
-  //   }*/
    if (e.target.getAttribute('group') === "buttons")
     {
       e.target.parentNode.remove();
       console.log("we worked");
     }});
-  //  console.log(e.target.group);
-  
-
-    
- /* document.getElementsByGroupName('buttons').addEventListener('click', (e) =>{
-    e.preventDefault();
-    e.target.parentNode.remove();
-    totalList.pop(); //this removes the last item in the array, which doesn't work properly if you X out anything but the last item.
-    console.log(btn);
-  });
-  */
 
 
   
